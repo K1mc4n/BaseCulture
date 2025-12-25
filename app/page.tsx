@@ -1,62 +1,24 @@
-"use client";
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Wallet } from "@coinbase/onchainkit/wallet";
-
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <header className={styles.headerWrapper}>
-        <Wallet />
-      </header>
+      return (
+            <main className="container">
+                  <div className="content">
+                          <span className="badge">Coming Soon</span>
 
-      <div className={styles.content}>
-        <Image
-          priority
-          src="/sphere.svg"
-          alt="Sphere"
-          width={200}
-          height={200}
-        />
-        <h1 className={styles.title}>OnchainKit</h1>
+                                  <h1 className="title">Base Culture</h1>
 
-        <p>
-          Get started by editing <code>app/page.tsx</code>
-        </p>
+                                          <p className="subtitle">
+                                                    A global space to discover, preserve, and share cultures — built on Base.
+                                                            </p>
 
-        <h2 className={styles.componentsTitle}>Explore Components</h2>
+                                                                    <p className="description">
+                                                                              Cultures from every country, told by real people,
+                                                                                        and preserved for the future.
+                                                                                                </p>
+                                                                                                      </div>
 
-        <ul className={styles.components}>
-          {[
-            {
-              name: "Transaction",
-              url: "https://docs.base.org/onchainkit/transaction/transaction",
-            },
-            {
-              name: "Swap",
-              url: "https://docs.base.org/onchainkit/swap/swap",
-            },
-            {
-              name: "Checkout",
-              url: "https://docs.base.org/onchainkit/checkout/checkout",
-            },
-            {
-              name: "Wallet",
-              url: "https://docs.base.org/onchainkit/wallet/wallet",
-            },
-            {
-              name: "Identity",
-              url: "https://docs.base.org/onchainkit/identity/identity",
-            },
-          ].map((component) => (
-            <li key={component.name}>
-              <a target="_blank" rel="noreferrer" href={component.url}>
-                {component.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+                                                                                                            <footer className="footer">
+                                                                                                                    Culture is onchain.
+                                                                                                                          </footer>
+                                                                                                                              </main>
+      );
 }

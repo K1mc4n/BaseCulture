@@ -1,60 +1,67 @@
-@layer base {
-  :root {
-    --background: #ffffff;
-    --foreground: #171717;
-  }
+* {
+      box-sizing: border-box;
+        margin: 0;
+          padding: 0;
+}
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-    }
-  }
+html,
+body {
+      width: 100%;
+        height: 100%;
+          background-color: #fafafa;
+            color: #0f172a;
+              font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, sans-serif;
+}
 
-  html,
-  body {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
+.container {
+      min-height: 100vh;
+        display: flex;
+          flex-direction: column;
+            justify-content: space-between;
+              padding: 48px 24px;
+}
 
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: var(--font-inter), sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+.content {
+      max-width: 720px;
+        margin: auto;
+          text-align: center;
+}
 
-  code {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-family: var(--font-source-code-pro), monospace;
-    font-size: 0.875rem;
-    padding: 0.25rem 0.5rem calc(0.25rem + 2px);
-  }
+.badge {
+      display: inline-block;
+        margin-bottom: 24px;
+          padding: 6px 14px;
+            border-radius: 999px;
+              background-color: rgba(0, 82, 255, 0.1);
+                color: #0052ff;
+                  font-size: 14px;
+                    font-weight: 500;
+}
 
-  @media (prefers-color-scheme: dark) {
-    code {
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-  }
+.title {
+      font-size: 56px;
+        font-weight: 700;
+          letter-spacing: -0.02em;
+            margin-bottom: 16px;
+}
 
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+.subtitle {
+      font-size: 18px;
+        line-height: 1.6;
+          margin-bottom: 12px;
+            color: #334155;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+.description {
+      font-size: 16px;
+        line-height: 1.6;
+          color: #64748b;
+}
 
-  @media (prefers-color-scheme: dark) {
-    html {
-      color-scheme: dark;
-    }
-  }
+.footer {
+      text-align: center;
+        font-size: 14px;
+          color: #94a3b8;
+            margin-top: 48px;
 }
