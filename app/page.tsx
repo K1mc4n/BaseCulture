@@ -16,6 +16,24 @@ export default function Home() {
                                                                                                 </p>
                                                                                                       </div>
 
+<div className="roadmap">
+  <h2 className="roadmap-title">Roadmap</h2>
+  <div className="phases">
+    <div className="phase">
+      <h3 className="phase-title">Phase 1: Introduction</h3>
+      <p className="phase-description">Launching Base Culture as a cultural introduction platform.</p>
+    </div>
+    <div className="phase">
+      <h3 className="phase-title">Phase 2: Exploration</h3>
+      <p className="phase-description">Explore cultures by country and category.</p>
+    </div>
+    <div className="phase">
+      <h3 className="phase-title">Phase 3: Creation</h3>
+      <p className="phase-description">Creators can submit and share their cultural stories.</p>
+    </div>
+  </div>
+</div>
+
                                                                                                             <footer className="footer">
                                                                                                                     Culture is onchain.
                                                                                                                           </footer>
