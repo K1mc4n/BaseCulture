@@ -1,0 +1,148 @@
+{
+  "name": "Base Culture",
+  "description": "A global space to discover, preserve, and share cultures — built on Base",
+  "icon": "https://example.com/icon-192.png",
+  "homepage": "https://baseculture.example.com",
+  "splashImageUrl": "https://example.com/splash.png",
+  "splashBackgroundColor": "#0052ff",
+  "webhookUrl": "https://baseculture.example.com/api/farcaster/webhook",
+  "version": "1",
+  "creator": {
+    "fid": 0,
+    "username": "K1mc4n"
+  },
+  "imageAspectRatio": "1.91:1",
+  "buttons": [
+    {
+      "label": "Open App",
+      "action": "link",
+      "target": "https://baseculture.example.com"
+    },
+    {
+      "label": "Share Culture",
+      "action": "post",
+      "target": "https://baseculture.example.com/share"
+    }
+  ],
+  "frame": {
+    "version": "vNext",
+    "imageUrl": "https://baseculture.example.com/og-image.png",
+    "buttons": [
+      {
+        "label": "🌍 Discover Cultures",
+        "action": "post",
+        "target": "https://baseculture.example.com/api/frames/discover"
+      },
+      {
+        "label": "🎨 View Animations",
+        "action": "post",
+        "target": "https://baseculture.example.com/api/frames/animations"
+      },
+      {
+        "label": "📱 Open in App",
+        "action": "link",
+        "target": "https://baseculture.example.com"
+      }
+    ]
+  },
+  "categories": [
+    "social",
+    "culture",
+    "education",
+    "web3"
+  ],
+  "permissions": [
+    "read:user",
+    "read:likes",
+    "read:recasts",
+    "write:likes",
+    "write:recasts",
+    "write:casts"
+  ],
+  "metadata": {
+    "displayName": "Base Culture",
+    "shortDescription": "Discover and share global cultures",
+    "longDescription": "A global space to discover, preserve, and share cultures from every country, told by real people, and preserved for the future. Featuring 15 unique cultural animations and interactive country selector.",
+    "author": "K1mc4n",
+    "version": "0.1.0",
+    "website": "https://baseculture.example.com",
+    "github": "https://github.com/K1mc4n/BaseCulture",
+    "twitter": "@K1mc4n"
+  },
+  "networks": [
+    "base-mainnet",
+    "base-sepolia",
+    "ethereum-mainnet"
+  ],
+  "features": {
+    "culturalAnimations": {
+      "enabled": true,
+      "count": 15,
+      "countries": [
+        "Japan",
+        "India",
+        "Egypt",
+        "Brazil",
+        "Mexico",
+        "China",
+        "Greece",
+        "Morocco",
+        "Korea",
+        "Italy",
+        "Ireland",
+        "Peru",
+        "Thailand",
+        "USA",
+        "France"
+      ]
+    },
+    "countrySelector": {
+      "enabled": true,
+      "interactive": true
+    },
+    "blockchain": {
+      "enabled": true,
+      "chainId": 8453,
+      "chainName": "Base",
+      "rpcUrl": "https://mainnet.base.org"
+    }
+  },
+  "openActions": [
+    {
+      "actionId": "share_culture",
+      "label": "Share Culture",
+      "description": "Share a cultural discovery with your network",
+      "icon": "🌍"
+    },
+    {
+      "actionId": "explore_country",
+      "label": "Explore Country",
+      "description": "Explore cultures from a specific country",
+      "icon": "🗺️"
+    },
+    {
+      "actionId": "join_culture",
+      "label": "Join Movement",
+      "description": "Join the culture preservation movement",
+      "icon": "🤝"
+    }
+  ],
+  "integrations": {
+    "wallet": {
+      "enabled": true,
+      "providers": [
+        "metamask",
+        "coinbase",
+        "rainbow"
+      ]
+    },
+    "onchain": {
+      "enabled": true,
+      "contracts": []
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "trackingId": ""
+  }
+}
