@@ -2,11 +2,11 @@
   "miniapp": {
     "version": "1",
     "name": "Base Culture",
-    "iconUrl": "https://baseculture.example.com/icon-192.png",
-    "homeUrl": "base-culture.vercel.app",
-    "imageUrl": "https://baseculture.example.com/og-image.png",
+    "iconUrl": "https://base-culture.vercel.app/icon-192.png",
+    "homeUrl": "https://base-culture.vercel.app",
+    "imageUrl": "https://base-culture.vercel.app/og-image.png",
     "buttonTitle": "🌍 Discover",
-    "splashImageUrl": "https://baseculture.example.com/splash.png",
+    "splashImageUrl": "https://base-culture.vercel.app/splash.png",
     "splashBackgroundColor": "#0052ff",
     "requiredChains": [
       "eip155:8453"
