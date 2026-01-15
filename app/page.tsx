@@ -1,42 +1,58 @@
+'use client';
+
+import { useState } from 'react';
+import { CulturalAnimation } from './culturalAnimations';
+import { CountrySelector } from './countrySelector';
+
 export default function Home() {
-      return (
-            <main className="container">
-                  <div className="content">
-                          <span className="badge">Coming Soon</span>
+  const [selectedCountry, setSelectedCountry] = useState('global');
 
-                                  <h1 className="title">Base Culture</h1>
+  return (
+    <CulturalAnimation country={selectedCountry}>
+      <main className="container">
+        <div className="selector-wrapper">
+          <CountrySelector
+            onCountryChange={setSelectedCountry}
+            currentCountry={selectedCountry}
+          />
+        </div>
 
-                                          <p className="subtitle">
-                                                    A global space to discover, preserve, and share cultures — built on Base.
-                                                            </p>
+        <div className="content">
+          <span className="badge">Coming Soon</span>
 
-                                                                    <p className="description">
-                                                                              Cultures from every country, told by real people,
-                                                                                        and preserved for the future.
-                                                                                                </p>
-                                                                                                      </div>
+          <h1 className="title">Base Culture</h1>
 
-<div className="roadmap">
-  <h2 className="roadmap-title">Roadmap</h2>
-  <div className="phases">
-    <div className="phase">
-      <h3 className="phase-title">Phase 1: Introduction</h3>
-      <p className="phase-description">Launching Base Culture as a cultural introduction platform.</p>
-    </div>
-    <div className="phase">
-      <h3 className="phase-title">Phase 2: Exploration</h3>
-      <p className="phase-description">Explore cultures by country and category.</p>
-    </div>
-    <div className="phase">
-      <h3 className="phase-title">Phase 3: Creation</h3>
-      <p className="phase-description">Creators can submit and share their cultural stories.</p>
-    </div>
-  </div>
-</div>
+          <p className="subtitle">
+            A global space to discover, preserve, and share cultures — built on Base.
+          </p>
 
-                                                                                                            <footer className="footer">
-                                                                                                                    Culture is onchain.
-                                                                                                                          </footer>
-                                                                                                                              </main>
-      );
+          <p className="description">
+            Cultures from every country, told by real people, and preserved for the future.
+          </p>
+        </div>
+
+        <div className="roadmap">
+          <h2 className="roadmap-title">Roadmap</h2>
+          <div className="phases">
+            <div className="phase">
+              <h3 className="phase-title">Phase 1: Introduction</h3>
+              <p className="phase-description">Launching Base Culture as a cultural introduction platform.</p>
+            </div>
+            <div className="phase">
+              <h3 className="phase-title">Phase 2: Exploration</h3>
+              <p className="phase-description">Explore cultures by country and category.</p>
+            </div>
+            <div className="phase">
+              <h3 className="phase-title">Phase 3: Creation</h3>
+              <p className="phase-description">Creators can submit and share their cultural stories.</p>
+            </div>
+          </div>
+        </div>
+
+        <footer className="footer">
+          Culture is onchain.
+        </footer>
+      </main>
+    </CulturalAnimation>
+  );
 }

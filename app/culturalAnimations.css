@@ -1,0 +1,396 @@
+/* Cultural Animation Backgrounds */
+
+.cultural-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fafafa 0%, #f0f9ff 100%);
+}
+
+.animation-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Cherry Blossoms - Japan */
+.cultural-background.cherry-blossoms .animation-layer {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 192, 203, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(255, 160, 180, 0.25) 0%, transparent 50%);
+  animation: blossom-drift 20s infinite ease-in-out;
+}
+
+@keyframes blossom-drift {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(20px) translateY(-30px);
+  }
+  50% {
+    transform: translateX(0) translateY(-50px);
+  }
+  75% {
+    transform: translateX(-20px) translateY(-30px);
+  }
+}
+
+/* Mandala Rotate - India */
+.cultural-background.mandala-rotate .animation-layer {
+  background: 
+    radial-gradient(circle, rgba(255, 127, 80, 0.1) 10%, transparent 20%),
+    conic-gradient(
+      from 0deg,
+      rgba(255, 165, 0, 0.15),
+      rgba(255, 215, 0, 0.15),
+      rgba(255, 165, 0, 0.15)
+    );
+  animation: mandala-spin 30s linear infinite;
+}
+
+@keyframes mandala-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pyramid Glow - Egypt */
+.cultural-background.pyramid-glow .animation-layer {
+  background: linear-gradient(180deg, 
+    rgba(255, 223, 0, 0.05) 0%,
+    rgba(255, 165, 0, 0.1) 50%,
+    rgba(184, 134, 11, 0.05) 100%);
+  animation: pyramid-pulse 4s ease-in-out infinite;
+}
+
+@keyframes pyramid-pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Samba Waves - Brazil */
+.cultural-background.samba-waves .animation-layer {
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 255, 127, 0.1) 0px,
+      rgba(0, 255, 127, 0.05) 10px,
+      transparent 20px,
+      transparent 30px
+    );
+  animation: samba-wave 3s ease-in-out infinite;
+}
+
+@keyframes samba-wave {
+  0%, 100% {
+    transform: skewX(0deg) translateY(0);
+  }
+  50% {
+    transform: skewX(5deg) translateY(-20px);
+  }
+}
+
+/* Papel Picado - Mexico */
+.cultural-background.papel-picado .animation-layer {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 0, 127, 0.08) 0px,
+    rgba(255, 105, 180, 0.08) 20px,
+    rgba(255, 215, 0, 0.08) 40px,
+    rgba(0, 191, 255, 0.08) 60px
+  );
+  animation: papel-flutter 2s ease-in-out infinite;
+}
+
+@keyframes papel-flutter {
+  0%, 100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.95);
+  }
+}
+
+/* Dragons Fly - China */
+.cultural-background.dragons-fly .animation-layer {
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255, 0, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
+  animation: dragon-fly 8s infinite ease-in-out;
+}
+
+@keyframes dragon-fly {
+  0%, 100% {
+    transform: translateX(-50px) translateY(-50px);
+  }
+  50% {
+    transform: translateX(50px) translateY(50px);
+  }
+}
+
+/* Geometric Spiral - Greece */
+.cultural-background.geometric-spiral .animation-layer {
+  background: repeating-conic-gradient(
+    from 0deg,
+    rgba(0, 0, 139, 0.08) 0deg,
+    rgba(0, 0, 139, 0.04) 30deg,
+    transparent 60deg,
+    transparent 120deg
+  );
+  animation: geometric-rotate 40s linear infinite;
+}
+
+@keyframes geometric-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Moroccan Tiles - Morocco */
+.cultural-background.moroccan-tiles .animation-layer {
+  background: 
+    linear-gradient(45deg, rgba(178, 34, 34, 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(178, 34, 34, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(178, 34, 34, 0.08) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(178, 34, 34, 0.08) 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+  animation: tile-shift 6s ease-in-out infinite;
+}
+
+@keyframes tile-shift {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Yin Yang Rotate - Korea */
+.cultural-background.yin-yang-rotate .animation-layer {
+  background: 
+    radial-gradient(circle at 30% 50%, rgba(255, 0, 0, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 30% 50%, rgba(0, 0, 255, 0.08) 40%, transparent 80%);
+  animation: yin-yang-spin 8s linear infinite;
+}
+
+@keyframes yin-yang-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Renaissance Pattern - Italy */
+.cultural-background.renaissance-pattern .animation-layer {
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(184, 134, 11, 0.08) 0px,
+      rgba(184, 134, 11, 0.04) 10px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(184, 134, 11, 0.08) 0px,
+      rgba(184, 134, 11, 0.04) 10px,
+      transparent 20px
+    );
+  animation: renaissance-glow 5s ease-in-out infinite;
+}
+
+@keyframes renaissance-glow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.1);
+  }
+}
+
+/* Celtic Knot - Ireland */
+.cultural-background.celtic-knot .animation-layer {
+  background: repeating-conic-gradient(
+    from 45deg at 50% 50%,
+    rgba(0, 128, 0, 0.08) 0deg,
+    rgba(0, 100, 0, 0.04) 90deg,
+    transparent 180deg
+  );
+  animation: celtic-weave 12s linear infinite;
+}
+
+@keyframes celtic-weave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Incan Weave - Peru */
+.cultural-background.incan-weave .animation-layer {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(210, 105, 30, 0.08) 0px,
+    rgba(139, 69, 19, 0.08) 5px,
+    transparent 10px
+  );
+  animation: incan-shift 4s ease-in-out infinite;
+}
+
+@keyframes incan-shift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* Thai Spiral - Thailand */
+.cultural-background.thai-spiral .animation-layer {
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(255, 140, 0, 0.08) 0deg,
+    rgba(255, 165, 0, 0.04) 45deg,
+    transparent 90deg
+  );
+  animation: thai-spiral-rotate 25s linear infinite;
+}
+
+@keyframes thai-spiral-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stars Twinkle - USA */
+.cultural-background.stars-twinkle .animation-layer {
+  background: 
+    radial-gradient(2px 2px at 20px 30px, rgba(0, 52, 255, 0.8), rgba(0, 52, 255, 0)),
+    radial-gradient(2px 2px at 60px 70px, rgba(0, 52, 255, 0.8), rgba(0, 52, 255, 0)),
+    radial-gradient(1px 1px at 50px 50px, rgba(0, 52, 255, 0.6), rgba(0, 52, 255, 0)),
+    radial-gradient(1px 1px at 130px 80px, rgba(0, 52, 255, 0.6), rgba(0, 52, 255, 0)),
+    radial-gradient(2px 2px at 90px 10px, rgba(0, 52, 255, 0.8), rgba(0, 52, 255, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: stars-twinkle 3s ease-in-out infinite;
+}
+
+@keyframes stars-twinkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Fleur de Lis - France */
+.cultural-background.fleur-de-lis .animation-layer {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 139, 0.08) 0px,
+      transparent 40px,
+      transparent 50px,
+      rgba(0, 0, 139, 0.08) 90px
+    );
+  animation: fleur-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes fleur-shimmer {
+  0%, 100% {
+    filter: opacity(0.6);
+  }
+  50% {
+    filter: opacity(1);
+  }
+}
+
+/* Global Pulse - Default */
+.cultural-background.global-pulse .animation-layer {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 82, 255, 0.1) 0%,
+    transparent 50%
+  );
+  animation: global-pulse 4s ease-in-out infinite;
+}
+
+@keyframes global-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  @keyframes blossom-drift {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(10px) translateY(-15px);
+    }
+    50% {
+      transform: translateX(0) translateY(-25px);
+    }
+    75% {
+      transform: translateX(-10px) translateY(-15px);
+    }
+  }
+
+  @keyframes samba-wave {
+    0%, 100% {
+      transform: skewX(0deg) translateY(0);
+    }
+    50% {
+      transform: skewX(3deg) translateY(-10px);
+    }
+  }
+
+  @keyframes dragon-fly {
+    0%, 100% {
+      transform: translateX(-30px) translateY(-30px);
+    }
+    50% {
+      transform: translateX(30px) translateY(30px);
+    }
+  }
+}
