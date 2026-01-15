@@ -1,79 +1,21 @@
 {
-  "name": "Base Culture",
-  "description": "A global space to discover, preserve, and share cultures — built on Base",
-  "icon": "https://baseculture.example.com/icon-192.png",
-  "iconUrl": "https://baseculture.example.com/icon-192.png",
-  "homepage": "https://baseculture.example.com",
-  "splashImageUrl": "https://baseculture.example.com/splash.png",
-  "splashBackgroundColor": "#0052ff",
-  "webhookUrl": "https://baseculture.example.com/api/farcaster/webhook",
-  "version": "1",
-  "creator": {
-    "fid": 0,
-    "username": "K1mc4n"
-  },
-  "imageAspectRatio": "1.91:1",
-  "buttons": [
-    {
-      "label": "Open App",
-      "action": "link",
-      "target": "https://baseculture.example.com"
-    },
-    {
-      "label": "Share Culture",
-      "action": "post",
-      "target": "https://baseculture.example.com/share"
-    }
-  ],
-  "frame": {
-    "version": "vNext",
+  "miniapp": {
+    "version": "1",
+    "name": "Base Culture",
+    "iconUrl": "https://baseculture.example.com/icon-192.png",
+    "homeUrl": "https://baseculture.example.com",
     "imageUrl": "https://baseculture.example.com/og-image.png",
-    "imageAspectRatio": "1.91:1",
-    "buttons": [
-      {
-        "label": "🌍 Discover Cultures",
-        "action": "post",
-        "target": "https://baseculture.example.com/api/frames"
-      },
-      {
-        "label": "🎨 View Animations",
-        "action": "post",
-        "target": "https://baseculture.example.com/api/frames"
-      },
-      {
-        "label": "📱 Open in App",
-        "action": "link",
-        "target": "https://baseculture.example.com"
-      }
+    "buttonTitle": "🌍 Discover",
+    "splashImageUrl": "https://baseculture.example.com/splash.png",
+    "splashBackgroundColor": "#0052ff",
+    "requiredChains": [
+      "eip155:8453"
+    ],
+    "requiredCapabilities": [
+      "actions.signIn",
+      "wallet.getEthereumProvider",
+      "actions.viewBalance"
     ]
-  },
-  "categories": [
-    "social",
-    "culture",
-    "education",
-    "web3"
-  ],
-  "permissions": [
-    "read:user",
-    "read:likes",
-    "read:recasts",
-    "write:likes",
-    "write:recasts",
-    "write:casts"
-  ],
-  "metadata": {
-    "displayName": "Base Culture",
-    "shortDescription": "Discover and share global cultures",
-    "longDescription": "A global space to discover, preserve, and share cultures from every country, told by real people, and preserved for the future. Featuring 15 unique cultural animations and interactive country selector.",
-    "author": "K1mc4n",
-    "version": "0.1.0",
-    "website": "https://baseculture.example.com",
-    "github": "https://github.com/K1mc4n/BaseCulture",
-    "twitter": "@K1mc4n"
-  },
-  "networks": [
-    "base-mainnet",
-    "base-sepolia"
-  ]
+  }
 }
 
