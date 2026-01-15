@@ -1,0 +1,14 @@
+{
+  "name": "Base Culture",
+  "description": "A global space to discover, preserve, and share cultures — built on Base",
+  "icon": "/icon.png",
+  "metadata": {
+    "url": "https://baseculture.example.com",
+    "shortDescription": "Discover and share global cultures",
+    "category": "social",
+    "author": "K1mc4n",
+    "version": "0.1.0"
+  },
+  "permissions": ["wallet", "analytics"],
+  "networks": ["base-mainnet", "base-sepolia"]
+}
