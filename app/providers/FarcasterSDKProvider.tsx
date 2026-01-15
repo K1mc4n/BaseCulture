@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { useFarcasterSDK } from '@/app/hooks/useFarcasterSDK';
 
 export function FarcasterSDKProvider({ children }: { children: ReactNode }) {
-  const { isReady, error } = useFarcasterSDK();
+  const { error } = useFarcasterSDK();
 
   if (error) {
     console.error('Farcaster SDK Error:', error);
