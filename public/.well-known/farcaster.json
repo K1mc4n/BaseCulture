@@ -1,0 +1,20 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Base Culture",
+    "description": "Discover, preserve, and share cultures from every country — built on Base",
+    "iconUrl": "https://base-culture.vercel.app/icon-192.png",
+    "homeUrl": "https://base-culture.vercel.app",
+    "imageUrl": "https://base-culture.vercel.app/og-image.png",
+    "buttonTitle": "🌍 Discover",
+    "splashImageUrl": "https://base-culture.vercel.app/splash.png",
+    "splashBackgroundColor": "#0052ff",
+    "requiredChains": [
+      "eip155:8453"
+    ],
+    "requiredCapabilities": [
+      "actions.signIn",
+      "wallet.getEthereumProvider"
+    ]
+  }
+}
