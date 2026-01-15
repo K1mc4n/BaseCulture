@@ -5,10 +5,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { buttonIndex, trustedData } = body;
-
-    // Get frame data from Farcaster
-    const frameData = trustedData?.messageBytes;
+    const { _buttonIndex, _trustedData } = body;
 
     // Generate response frame
     const imageUrl = `${BASE_URL}/api/og?page=discover`;

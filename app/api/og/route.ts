@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
-  const page = searchParams.get('page') || 'default';
+  const _page = searchParams.get('page') || 'default';
   const country = searchParams.get('country') || null;
 
   // Simple SVG-based OG image generation
