@@ -22,10 +22,11 @@ const COUNTRIES = {
 
 export async function POST(
   req: NextRequest,
-  { params }: { params: { country: string } }
+  context: { params: Promise<{ country: string }> }
 ) {
   try {
-    const country = params.country.toLowerCase();
+    const { country: countryParam } = await context.params;
+    const country = countryParam.toLowerCase();
     const countryData = COUNTRIES[country as keyof typeof COUNTRIES];
 
     if (!countryData) {
