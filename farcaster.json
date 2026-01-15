@@ -3,7 +3,7 @@
     "version": "1",
     "name": "Base Culture",
     "iconUrl": "https://baseculture.example.com/icon-192.png",
-    "homeUrl": "https://baseculture.example.com",
+    "homeUrl": "base-culture.vercel.app",
     "imageUrl": "https://baseculture.example.com/og-image.png",
     "buttonTitle": "🌍 Discover",
     "splashImageUrl": "https://baseculture.example.com/splash.png",
